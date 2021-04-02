@@ -8,8 +8,20 @@ $botman->hears('Hi', function ($bot) {
 });
 $botman->hears('Start conversation', BotManController::class.'@startConversation');
 
+//$botman->on('event') when someone new joins say hi and when they leave
+
+// /help command
+// /start
+// /settings -> set everyone or all or custom message
 
 // @all Commands with various positioning of the @all keyword
+
+$botman->hears('guys', function ($bot) {
+    $bot->reply('pregnant');
+});
+
+
+
 
 $botman->hears('@all', function ($bot) {
     $bot->reply('I cannot tag all people yet, but maybe soon!');
