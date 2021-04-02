@@ -20,7 +20,7 @@ $botman->hears('guys', function ($bot) {
     $bot->reply('pregnant'); //make it reply the image?
 });*/
 
-$botman->hears('/(g)(u)*(y)*(s)*/i', function ($bot) {
+$botman->hears('([g][u]*[y]*[s]*)', function ($bot) {
     $bot->reply('pregnant'); //make it reply the image?
 });
 
