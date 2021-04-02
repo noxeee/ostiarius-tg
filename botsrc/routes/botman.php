@@ -15,13 +15,14 @@ $botman->hears('Start conversation', BotManController::class.'@startConversation
 // /settings -> set everyone or all or custom message
 
 // @all Commands with various positioning of the @all keyword
-
+/*
 $botman->hears('guys', function ($bot) {
-    $bot->reply('pregnant');
+    $bot->reply('pregnant'); //make it reply the image?
+});*/
+
+$botman->hears('/(g)(u)*(y)*(s)*/i', function ($bot) {
+    $bot->reply('pregnant'); //make it reply the image?
 });
-
-
-
 
 $botman->hears('@all', function ($bot) {
     $bot->reply('I cannot tag all people yet, but maybe soon!');
